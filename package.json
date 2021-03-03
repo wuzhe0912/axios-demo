@@ -15,7 +15,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "node-sass": "^4.13.1",
     "nuxt": "^2.0.0",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^8.0.2",
     "vue-material": "^1.0.0-beta-11"
