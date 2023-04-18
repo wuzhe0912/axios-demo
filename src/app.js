@@ -9,6 +9,7 @@ import morgan from 'morgan';
 import path from 'path';
 // fileURLToPath is core-modules
 import { fileURLToPath } from 'url';
+import { register } from './controllers/auth.js';
 
 // Configurations
 const __filename = fileURLToPath(import.meta.url);
@@ -39,7 +40,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // Routes with Files
-// app.post('/auth/register', upload.single('picture'), register);
+app.post('/auth/register', upload.single('picture'), register);
 
 // Mongoose setup
 const connectToDatabase = async () => {
